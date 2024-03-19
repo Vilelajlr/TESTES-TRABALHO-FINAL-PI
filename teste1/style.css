@@ -22,7 +22,12 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url(images/backgound.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
+
 
 
 .campoMinado{
@@ -47,20 +52,20 @@ section{
 }
 
 .content .textBox h2{
-    color: #333;
+    color: #f1f1f1;
     font-size: 4em;
     line-height: 1.4em;
     font-weight: 500;
 }
 
 .content .textBox h2 span{
-    color: #017143;
+    color: #000;
     font-size: 1.2em;
     font-weight: 900;
 }
 
 .content .textBox p{
-    color: #333;
+    color: #f1f1f1;
 }
 
 .content .textBox a {
