@@ -5,16 +5,15 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 header .logo{
     position: relative;
-    font-size: 2rem;
+    font-size: 1.3rem;
     -webkit-text-stroke-width: 1px; 
     -webkit-text-stroke-color: #000;
     color: white;
@@ -44,3 +43,46 @@ header ul li a{
     margin-left: 40px;
     text-decoration: none;
 }
+
+.menu-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .menu-toggle.active {
+        color: #ccc;
+    }
+    
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        text-align: center;
+        backdrop-filter: blur(2px);
+        height: 100vh;
+        transition: 5s;
+        z-index: 999;
+    }
+
+    .menu.active li {
+        margin: 15px 0;
+        
+    }
+
+    
+}
+

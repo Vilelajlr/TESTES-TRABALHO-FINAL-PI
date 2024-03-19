@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stalinist+One&display=swap" rel="stylesheet">
     <title>OnGames</title>
-    <script src="script.js" type="text/javascript"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleheader.css">
@@ -19,8 +19,9 @@
         <div class="desfoque"></div>
         
         <header>
-            <a href="#"><h1 class="logo">On<span>Games.com</span></h1></a>
-            <ul>
+            <a href="#"><h1 class="logo">OnGames.com</h1></a>
+            <button class="menu-toggle">&#9776;</button>
+            <ul class="menu">
                 <li><a href="#">Jogos</a></li>
                 <li><a href="#">Informações</a></li>
                 <li><a href="#">Como Jogar</a></li>
@@ -30,18 +31,18 @@
         
             <div class="content">
                 <div class="textBox" id="jogoDaVelha">
-                    <h2>Jogo da Velha<br>Sobre <span>o jogo.</span></h2>
+                    <h2>Jogo da Velha<br><span>Sobre o jogo.</span></h2>
                     <p>
                         O jogo da velha é um jogo de estratégia para dois jogadores em um tabuleiro 3x3. Os jogadores alternam entre marcar espaços com "X" e "O" com o objetivo de formar uma linha horizontal, vertical ou diagonal. O primeiro jogador a completar uma linha vence. Se o tabuleiro ficar completamente preenchido sem linhas completas, o jogo termina em empate.
                     </p>
                     <a href="jogoDaVelha.html">Jogar</a>
                 </div>
                 <div class="textBox campoMinado">
-                    <h2>Campo Minado<br>Sobre <span>o jogo.</span></h2>
+                    <h2>Campo Minado<br><span>Sobre o jogo.</span></h2>
                     <p>
                         O campo minado é um jogo de lógica onde o objetivo é descobrir todas as minas no tabuleiro. O jogador pode clicar em qualquer quadrado para revelar o que está por baixo. Se o quadrado revelado contiver uma mina, o jogo termina. Se o quadrado não contiver uma mina, o jogador pode continuar a revelar quadrados. O jogo termina quando todas as minas são descobertas ou quando o jogador revela um quadrado com uma mina.
                     </p>
-                    <a href="#">Jogar</a>
+                    <a href="campoMinado.html">Jogar</a>
                 </div>
                 <div class="textBox adivinhacao">
                     <h2>Adivinhação<br>Sobre <span>o jogo.</span></h2>
@@ -67,6 +68,8 @@
             
     </section>
 
+
+    <script src="script.js" type="text/javascript"></script>
     
 
 </body>

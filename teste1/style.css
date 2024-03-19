@@ -162,3 +162,37 @@ section{
     transition: 1s;
     
 }
+
+@media screen and (max-width: 1280px) {
+    
+   
+    .content .imgBox{
+        display: none;
+    }
+
+    .content{
+        justify-content: center;
+    }
+
+    .content .textBox{
+        position: absolute;
+        width: 350px;
+    }
+
+    .content .textBox h2{
+        font-size: 2.5em;
+        line-height: 0.8;
+        margin-bottom: 20px;
+    }
+
+    .content .textBox h2 span{
+        font-size: 0.5em;
+    }
+   
+    .sci{
+        display: none;
+    }
+
+    
+
+}
