@@ -9,26 +9,47 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: #f7f7f7;
-}
-
-section main{
+    
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/backgound.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-h1{
+.desfoque{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(0.5px);
+
+}
+.vez-do-jogador{
+    z-index: 1;
+}
+
+
+section .jogo-da-velha{
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2{
     text-align: center;
+    color: #f1f1f1;
 }
 
 hr{
     font-weight: bold;
     height: 3px;
-    background: black;
+    background: f1f1f1;
     margin-bottom: 10px;
 }
 
@@ -45,4 +66,47 @@ hr{
     font-size: 50px;
     background: white;
 }
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
 
