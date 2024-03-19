@@ -28,6 +28,17 @@ section{
     
 }
 
+.desfoque{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+
+}
+
 
 
 .campoMinado{
@@ -42,7 +53,7 @@ section{
     position: relative;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -149,4 +160,5 @@ section{
     background: #6d4d7d;
     clip-path: circle(600px at right 800px);
     transition: 1s;
+    
 }
