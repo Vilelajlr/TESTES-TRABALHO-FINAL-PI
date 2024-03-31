@@ -1,8 +1,8 @@
 
     function imgSlider(anything){
        const jogoDaVelha = document.querySelector('#jogoDaVelha');
-       const campoMinado = document.querySelector('.campoMinado');
-       const adivinhacao = document.querySelector('.adivinhacao');
+       const campoMinado = document.querySelector('#campoMinado');
+       const adivinhacao = document.querySelector('#adivinhacao');
          
 
        const slider = document.querySelector('.starbucks');
